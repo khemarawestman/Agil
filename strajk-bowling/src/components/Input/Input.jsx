@@ -9,6 +9,8 @@ function Input({
   defaultValue,
   disabled,
 }) {
+  console.log("Input Component Props:", label, type, customClass, name, defaultValue, disabled);
+
   return (
     <section className='input'>
       <label className='input__label'>{label}</label>
@@ -19,6 +21,7 @@ function Input({
         onChange={handleChange}
         defaultValue={defaultValue ? defaultValue : ''}
         disabled={disabled}
+        data-testid={label}
       />
     </section>
   );
