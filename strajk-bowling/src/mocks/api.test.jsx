@@ -1,4 +1,4 @@
-// src/mocks/api.test.js
+
 
 import '@testing-library/jest-dom';
 
